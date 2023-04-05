@@ -12,6 +12,8 @@ namespace DesignPatterns.CreationalDesignPatterns
 
 		//eager loading
 		//private static SingletonDesignPattern singleton = new SingletonDesignPattern();
+
+		//lazy loading
 		private static SingletonDesignPattern singleton;
 		private static int count = 0;
 		private SingletonDesignPattern()
@@ -21,6 +23,7 @@ namespace DesignPatterns.CreationalDesignPatterns
 
 		public static SingletonDesignPattern getSingleton()
 		{
+			//double checked locking
 			if (singleton == null)
 			{
 				//threadsafe control

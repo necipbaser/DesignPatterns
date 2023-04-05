@@ -2,6 +2,7 @@
 
 
 using DesignPatterns.CreationalDesignPatterns;
+using DesignPatterns.CreationalDesignPatterns.AbstractFactoryDesing;
 using DesignPatterns.CreationalDesignPatterns.FactoryDesignPatttern;
 
 internal class Program
@@ -22,5 +23,12 @@ internal class Program
 
         Console.WriteLine(s8.ToString());
         Console.WriteLine(note8.ToString());
+
+		//Abstract Desing Pattern
+		S8Factory s8Factory = new S8Factory();
+		var s8Phone = s8Factory.GetTelephone("S8", "2600mah", 12, 18);
+
+		Note8Factory note8Factory = new Note8Factory();
+		var note8Phone = note8Factory.GetTelephone("note8", "3000mah", 14, 20);
     }
 }

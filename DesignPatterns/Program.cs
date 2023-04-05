@@ -2,6 +2,7 @@
 
 
 using DesignPatterns.CreationalDesignPatterns;
+using DesignPatterns.CreationalDesignPatterns.FactoryDesignPatttern;
 
 internal class Program
 {
@@ -14,5 +15,12 @@ internal class Program
 		{
 			SingletonDesignPattern singleton = SingletonDesignPattern.getSingleton();
 		}
-	}
+
+		//Factory Desing Pattern
+		Telephone s8 = TelephoneFactory.GetTelephone("S8","2600mah",12,18);
+		Telephone note8 = TelephoneFactory.GetTelephone("Note8", "3000mah", 14, 22);
+
+        Console.WriteLine(s8.ToString());
+        Console.WriteLine(note8.ToString());
+    }
 }

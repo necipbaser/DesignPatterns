@@ -8,6 +8,7 @@ namespace DesignPatterns.CreationalDesignPatterns.AbstractFactoryDesign
 {
 	public class S8 : Telephone
 	{
+
 		public S8(string model, string battery, int width, int height)
 		{
 			Model = model;
@@ -17,7 +18,7 @@ namespace DesignPatterns.CreationalDesignPatterns.AbstractFactoryDesign
 		}
 
 		private string Model { get; set; }
-		private string Battery { get; set; }
+		private string Battery { get; set; }	
 		private int Width { get; set; }
 		private int Height { get; set; }
 

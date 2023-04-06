@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.CreationalDesignPatterns.FactoryDesignPatttern
+namespace DesignPatterns.CreationalDesignPatterns.AbstractFactoryDesign
 {
 	public class Note8 : Telephone
 	{
